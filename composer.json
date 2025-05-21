@@ -1,0 +1,30 @@
+{
+  "name": "jlonom/allegro-sdk",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.1",
+    "jane-php/jane-php": "^7.8",
+    "nyholm/psr7": "^1.8"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": "true"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Jlonom\\AllegroSDK\\": "src/Client"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}

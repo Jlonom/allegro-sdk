@@ -1,0 +1,20 @@
+<?php
+
+namespace Jlonom\AllegroSDK\Exception;
+
+class SetOrderFulfillmentUsingPUTUnauthorizedException extends UnauthorizedException
+{
+    /**
+     * @var \Psr\Http\Message\ResponseInterface
+     */
+    private $response;
+    public function __construct(\Psr\Http\Message\ResponseInterface $response = null)
+    {
+        parent::__construct('Authentication failed, e.g. token is expired');
+        $this->response = $response;
+    }
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
+    {
+        return $this->response;
+    }
+}

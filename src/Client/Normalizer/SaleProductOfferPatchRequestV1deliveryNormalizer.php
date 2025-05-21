@@ -1,0 +1,89 @@
+<?php
+
+namespace Jlonom\AllegroSDK\Normalizer;
+
+use Jane\Component\JsonSchemaRuntime\Reference;
+use Jlonom\AllegroSDK\Runtime\Normalizer\CheckArray;
+use Jlonom\AllegroSDK\Runtime\Normalizer\ValidatorTrait;
+use Symfony\Component\Serializer\Normalizer\DenormalizerAwareInterface;
+use Symfony\Component\Serializer\Normalizer\DenormalizerAwareTrait;
+use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
+use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
+use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
+use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
+class SaleProductOfferPatchRequestV1deliveryNormalizer implements DenormalizerInterface, NormalizerInterface, DenormalizerAwareInterface, NormalizerAwareInterface
+{
+    use DenormalizerAwareTrait;
+    use NormalizerAwareTrait;
+    use CheckArray;
+    use ValidatorTrait;
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
+    {
+        return $type === \Jlonom\AllegroSDK\Model\SaleProductOfferPatchRequestV1delivery::class;
+    }
+    public function supportsNormalization(mixed $data, ?string $format = null, array $context = []): bool
+    {
+        return is_object($data) && get_class($data) === \Jlonom\AllegroSDK\Model\SaleProductOfferPatchRequestV1delivery::class;
+    }
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
+    {
+        if (isset($data['$ref'])) {
+            return new Reference($data['$ref'], $context['document-origin']);
+        }
+        if (isset($data['$recursiveRef'])) {
+            return new Reference($data['$recursiveRef'], $context['document-origin']);
+        }
+        $object = new \Jlonom\AllegroSDK\Model\SaleProductOfferPatchRequestV1delivery();
+        if (null === $data || false === \is_array($data)) {
+            return $object;
+        }
+        if (\array_key_exists('handlingTime', $data)) {
+            $object->setHandlingTime($data['handlingTime']);
+            unset($data['handlingTime']);
+        }
+        if (\array_key_exists('shippingRates', $data)) {
+            $object->setShippingRates($data['shippingRates']);
+            unset($data['shippingRates']);
+        }
+        if (\array_key_exists('additionalInfo', $data)) {
+            $object->setAdditionalInfo($data['additionalInfo']);
+            unset($data['additionalInfo']);
+        }
+        if (\array_key_exists('shipmentDate', $data)) {
+            $object->setShipmentDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['shipmentDate']));
+            unset($data['shipmentDate']);
+        }
+        foreach ($data as $key => $value) {
+            if (preg_match('/.*/', (string) $key)) {
+                $object[$key] = $value;
+            }
+        }
+        return $object;
+    }
+    public function normalize(mixed $data, ?string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
+    {
+        $dataArray = [];
+        if ($data->isInitialized('handlingTime') && null !== $data->getHandlingTime()) {
+            $dataArray['handlingTime'] = $data->getHandlingTime();
+        }
+        if ($data->isInitialized('shippingRates') && null !== $data->getShippingRates()) {
+            $dataArray['shippingRates'] = $data->getShippingRates();
+        }
+        if ($data->isInitialized('additionalInfo') && null !== $data->getAdditionalInfo()) {
+            $dataArray['additionalInfo'] = $data->getAdditionalInfo();
+        }
+        if ($data->isInitialized('shipmentDate') && null !== $data->getShipmentDate()) {
+            $dataArray['shipmentDate'] = $data->getShipmentDate()?->format('Y-m-d\TH:i:sP');
+        }
+        foreach ($data as $key => $value) {
+            if (preg_match('/.*/', (string) $key)) {
+                $dataArray[$key] = $value;
+            }
+        }
+        return $dataArray;
+    }
+    public function getSupportedTypes(?string $format = null): array
+    {
+        return [\Jlonom\AllegroSDK\Model\SaleProductOfferPatchRequestV1delivery::class => false];
+    }
+}
