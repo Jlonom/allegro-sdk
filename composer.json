@@ -1,15 +1,23 @@
 {
   "name": "jlonom/allegro-sdk",
   "type": "library",
+  "keywords": ["allegro", "php", "sdk"],
   "license": "proprietary",
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "description": "Allegro API SDK for PHP",
+  "authors": [
+    {
+      "name": "Oleksandr Martynenko",
+      "email": "3850185@gmail.com"
+    }
+  ],
   "require": {
     "php": "^8.1",
-    "jane-php/jane-php": "^7.8",
     "nyholm/psr7": "^1.8"
   },
   "require-dev": {
+    "jane-php/jane-php": "^7.8",
     "roave/security-advisories": "dev-latest"
   },
   "extra": {
