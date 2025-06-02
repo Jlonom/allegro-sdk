@@ -82,6 +82,6 @@ class GetPaymentsOperationHistory extends \Jlonom\AllegroSDK\Runtime\Client\Base
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

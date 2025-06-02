@@ -83,6 +83,6 @@ class GetCategoryParametersScheduledChangesUsingGET1 extends \Jlonom\AllegroSDK\
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user', 'bearer-token-for-application'];
+        return ['bearerAuth'];
     }
 }

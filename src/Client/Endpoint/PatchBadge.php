@@ -67,6 +67,6 @@ class PatchBadge extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint implemen
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

@@ -56,6 +56,6 @@ class NewMessagePOST extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint impl
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

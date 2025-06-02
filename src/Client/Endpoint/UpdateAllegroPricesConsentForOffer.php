@@ -61,6 +61,6 @@ class UpdateAllegroPricesConsentForOffer extends \Jlonom\AllegroSDK\Runtime\Clie
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

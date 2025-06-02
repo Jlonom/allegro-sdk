@@ -48,6 +48,6 @@ class GetCategoryUsingGET1 extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoin
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user', 'bearer-token-for-application'];
+        return ['bearerAuth'];
     }
 }

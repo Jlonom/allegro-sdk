@@ -78,6 +78,6 @@ class GetOrderEventsUsingGET extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpo
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

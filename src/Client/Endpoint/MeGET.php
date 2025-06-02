@@ -40,6 +40,6 @@ class MeGET extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint implements \J
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

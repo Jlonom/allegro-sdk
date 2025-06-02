@@ -71,6 +71,6 @@ class UpdateAfterSalesServiceReturnPolicyUsingPUT extends \Jlonom\AllegroSDK\Run
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

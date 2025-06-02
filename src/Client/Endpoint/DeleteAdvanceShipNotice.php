@@ -59,6 +59,6 @@ class DeleteAdvanceShipNotice extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndp
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

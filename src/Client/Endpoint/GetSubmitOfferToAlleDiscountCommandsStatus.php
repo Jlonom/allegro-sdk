@@ -54,6 +54,6 @@ class GetSubmitOfferToAlleDiscountCommandsStatus extends \Jlonom\AllegroSDK\Runt
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

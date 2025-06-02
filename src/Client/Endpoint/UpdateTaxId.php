@@ -65,6 +65,6 @@ class UpdateTaxId extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint impleme
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

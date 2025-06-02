@@ -73,6 +73,6 @@ class ListSellerPromotionsUsingGET1 extends \Jlonom\AllegroSDK\Runtime\Client\Ba
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

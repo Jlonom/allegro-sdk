@@ -78,6 +78,6 @@ class EditProductOffers extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint i
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

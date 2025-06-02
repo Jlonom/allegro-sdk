@@ -64,6 +64,6 @@ class GetPOSListUsingGET extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint 
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

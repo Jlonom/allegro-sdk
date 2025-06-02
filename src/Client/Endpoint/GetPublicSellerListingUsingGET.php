@@ -70,6 +70,6 @@ class GetPublicSellerListingUsingGET extends \Jlonom\AllegroSDK\Runtime\Client\B
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

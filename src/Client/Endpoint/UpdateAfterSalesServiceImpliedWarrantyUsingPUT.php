@@ -71,6 +71,6 @@ class UpdateAfterSalesServiceImpliedWarrantyUsingPUT extends \Jlonom\AllegroSDK\
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

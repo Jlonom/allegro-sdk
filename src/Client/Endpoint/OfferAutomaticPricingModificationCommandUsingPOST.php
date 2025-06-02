@@ -68,6 +68,6 @@ class OfferAutomaticPricingModificationCommandUsingPOST extends \Jlonom\AllegroS
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

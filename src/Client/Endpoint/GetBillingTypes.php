@@ -58,6 +58,6 @@ class GetBillingTypes extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint imp
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user', 'bearer-token-for-application'];
+        return ['bearerAuth'];
     }
 }

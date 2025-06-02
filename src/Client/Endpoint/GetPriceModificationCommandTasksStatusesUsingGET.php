@@ -73,6 +73,6 @@ class GetPriceModificationCommandTasksStatusesUsingGET extends \Jlonom\AllegroSD
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

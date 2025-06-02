@@ -63,6 +63,6 @@ class GetTurnoverDiscountsUsingGET extends \Jlonom\AllegroSDK\Runtime\Client\Bas
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

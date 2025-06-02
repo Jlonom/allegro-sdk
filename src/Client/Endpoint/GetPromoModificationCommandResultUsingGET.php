@@ -52,6 +52,6 @@ class GetPromoModificationCommandResultUsingGET extends \Jlonom\AllegroSDK\Runti
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

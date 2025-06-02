@@ -62,6 +62,6 @@ class GetPromoOptionsForSellerOffersUsingGET extends \Jlonom\AllegroSDK\Runtime\
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

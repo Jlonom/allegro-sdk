@@ -51,6 +51,6 @@ class GetListOfAdditionalEmailsUsingGET extends \Jlonom\AllegroSDK\Runtime\Clien
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

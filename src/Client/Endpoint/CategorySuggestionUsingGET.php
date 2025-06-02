@@ -64,6 +64,6 @@ class CategorySuggestionUsingGET extends \Jlonom\AllegroSDK\Runtime\Client\BaseE
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

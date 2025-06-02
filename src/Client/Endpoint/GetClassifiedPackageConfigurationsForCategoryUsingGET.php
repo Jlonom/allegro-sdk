@@ -60,6 +60,6 @@ class GetClassifiedPackageConfigurationsForCategoryUsingGET extends \Jlonom\Alle
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

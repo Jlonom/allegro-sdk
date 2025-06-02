@@ -58,6 +58,6 @@ class GetListOfDeliveryMethodsUsingGET extends \Jlonom\AllegroSDK\Runtime\Client
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user', 'bearer-token-for-application'];
+        return ['bearerAuth'];
     }
 }

@@ -65,6 +65,6 @@ class AnswerUserRatingUsingPUT extends \Jlonom\AllegroSDK\Runtime\Client\BaseEnd
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

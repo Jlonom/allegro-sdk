@@ -67,6 +67,6 @@ class GetAdditionalServiceGroupTranslations extends \Jlonom\AllegroSDK\Runtime\C
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

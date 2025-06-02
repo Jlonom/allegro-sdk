@@ -77,6 +77,6 @@ class UploadAfterSalesServiceConditionsAttachmentUsingPUT extends \Jlonom\Allegr
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

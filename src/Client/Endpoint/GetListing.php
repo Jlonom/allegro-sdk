@@ -157,6 +157,6 @@ class GetListing extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint implemen
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user', 'bearer-token-for-application'];
+        return ['bearerAuth'];
     }
 }

@@ -66,6 +66,6 @@ class GetBadges extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint implement
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

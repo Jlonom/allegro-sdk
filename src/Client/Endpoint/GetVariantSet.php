@@ -58,6 +58,6 @@ class GetVariantSet extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint imple
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

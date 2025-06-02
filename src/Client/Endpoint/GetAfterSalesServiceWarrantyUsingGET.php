@@ -58,6 +58,6 @@ class GetAfterSalesServiceWarrantyUsingGET extends \Jlonom\AllegroSDK\Runtime\Cl
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

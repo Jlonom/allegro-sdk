@@ -72,6 +72,6 @@ class ProductChangeProposal extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoi
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

@@ -60,6 +60,6 @@ class UpdateTagPUT extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint implem
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

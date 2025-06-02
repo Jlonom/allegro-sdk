@@ -54,6 +54,6 @@ class GetProductOffer extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint imp
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

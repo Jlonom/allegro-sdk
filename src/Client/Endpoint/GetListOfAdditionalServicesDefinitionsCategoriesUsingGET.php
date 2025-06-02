@@ -44,6 +44,6 @@ class GetListOfAdditionalServicesDefinitionsCategoriesUsingGET extends \Jlonom\A
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

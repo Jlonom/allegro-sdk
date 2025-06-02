@@ -57,6 +57,6 @@ class PromoModificationCommandUsingPUT extends \Jlonom\AllegroSDK\Runtime\Client
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

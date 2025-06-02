@@ -58,6 +58,6 @@ class GetShipmentCreationStatus extends \Jlonom\AllegroSDK\Runtime\Client\BaseEn
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

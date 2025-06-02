@@ -58,6 +58,6 @@ class GetofferAutomaticPricingModificationCommandStatusUsingGET extends \Jlonom\
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

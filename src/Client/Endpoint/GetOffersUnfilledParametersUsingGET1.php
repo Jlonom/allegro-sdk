@@ -74,6 +74,6 @@ class GetOffersUnfilledParametersUsingGET1 extends \Jlonom\AllegroSDK\Runtime\Cl
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

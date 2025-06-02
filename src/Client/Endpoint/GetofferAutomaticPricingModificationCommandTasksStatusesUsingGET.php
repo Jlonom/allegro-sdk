@@ -77,6 +77,6 @@ class GetofferAutomaticPricingModificationCommandTasksStatusesUsingGET extends \
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

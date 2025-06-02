@@ -54,6 +54,6 @@ class GetQuantityModificationCommandStatusUsingGET extends \Jlonom\AllegroSDK\Ru
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

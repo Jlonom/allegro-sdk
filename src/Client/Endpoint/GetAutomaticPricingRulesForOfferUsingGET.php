@@ -58,6 +58,6 @@ class GetAutomaticPricingRulesForOfferUsingGET extends \Jlonom\AllegroSDK\Runtim
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

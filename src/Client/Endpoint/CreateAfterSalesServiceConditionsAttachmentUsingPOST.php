@@ -74,6 +74,6 @@ class CreateAfterSalesServiceConditionsAttachmentUsingPOST extends \Jlonom\Alleg
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

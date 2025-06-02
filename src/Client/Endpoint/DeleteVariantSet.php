@@ -55,6 +55,6 @@ class DeleteVariantSet extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoint im
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }

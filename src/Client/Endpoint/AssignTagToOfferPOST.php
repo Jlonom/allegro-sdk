@@ -62,6 +62,6 @@ class AssignTagToOfferPOST extends \Jlonom\AllegroSDK\Runtime\Client\BaseEndpoin
     }
     public function getAuthenticationScopes(): array
     {
-        return ['bearer-token-for-user'];
+        return ['bearerAuth'];
     }
 }
